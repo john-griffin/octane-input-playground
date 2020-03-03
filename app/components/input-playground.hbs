@@ -1,0 +1,35 @@
+
+<table>
+  <tr>
+    <th></th>
+    <th>Value</th>
+    <th>Input</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>
+      {{this.value1}}
+      </td>
+    <td>
+      <Input1 @value={{this.value1}} @update={{this.updateValue1}} />
+    </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>
+      {{this.value2}}
+    </td>
+    <td>
+      <Input2 @value={{this.value2}} @update={{this.updateValue2}} />
+    </td>
+  </tr>
+  <tr>
+    <td>2b</td>
+    <td>
+      {{this.value2b}}
+    </td>
+    <td>
+      <Input2 @value={{this.value2b}} @update={{set this.value2b (get _ "target.value")}} />
+    </td>
+  </tr>
+</table>
